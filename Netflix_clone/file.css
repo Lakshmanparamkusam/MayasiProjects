@@ -1,0 +1,478 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.black-background {
+    background-color: black;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background-image: radial-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./images/Background.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.navbar {
+    height: 10vh;
+    display: flex;
+    padding-top: 1%;
+    padding-left: 2vw;
+    padding-right: 4vw;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.img_title {
+    width: 14%;
+}
+
+.Language_Options {
+    margin-left: auto;
+    margin-right: 3%;
+    padding: 8px 20px 8px;
+    border: 1px solid white;
+    border-radius: 5px;
+    align-items: center;
+    background: transparent;
+    color: white;
+}
+
+/* .Language_Options option {
+    background: rgb(149, 42, 59);
+} */
+
+.signin-btn {
+    background-color: #e50914;
+    color: white;
+    padding: 8px 20px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: fit-content;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main_container {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub_container {
+    color: white;
+    text-align: center;
+    width: 50%;
+}
+
+.main_text {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3.2em;
+    margin-bottom: 14px;
+}
+
+.main_subtext {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.Ptext {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.0em;
+}
+
+.email_container {
+    width: 40%;
+    gap: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.email_input {
+    flex: 1;
+    padding: 15px 40px;
+    margin-left: 20px;
+    border-radius: 5px;
+    border: solid 1px red;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.getstart-btn {
+    padding: 15px 40px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e50914;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.getstart-btn:hover {
+    background-color: #ff0b18;
+}
+
+.separate_line {
+    width: 100%;
+    height: 5px;
+    border-radius: 50%;
+    background: linear-gradient(to left, crimson, rgb(190, 21, 181));
+}
+
+.Start_plan {
+    position: relative;
+    height: 150px;
+    width: 90%;
+    margin-top: 5%;
+    margin-left: 5%;
+    border-radius: 15px;
+    color: white;
+    background: linear-gradient(to left, rgb(55, 6, 43), rgb(65, 21, 54));
+}
+
+.Start_plan h1 {
+    padding-left: 10%;
+    padding-top: 2%;
+}
+
+.Start_plan p {
+    padding-top: 1%;
+    padding-left: 10%;
+    font-size: large;
+}
+
+.plan_title {
+    margin-top: 5%;
+    margin-left: 5%;
+    color: white;
+}
+
+.Plans_div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 20px; 
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    justify-content: space-between; 
+}
+
+.Plan {
+    border-radius: 20px;
+    background: rgb(104, 11, 70);
+    color: white;
+    padding: 20px;
+    height: 250px;
+}
+
+.Plan p {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+.Reason_title {
+    margin-top: 5%;
+    margin-left: 5%;
+    color: white;
+}
+
+.Reasons_div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 20px; 
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    justify-content: space-between;
+}
+
+.Reason {
+    border-radius: 20px;
+    background: rgb(104, 11, 70);
+    color: white;
+    padding: 20px;
+    height: 250px;
+}
+
+.Reason p {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.faq_div h1 {
+    margin-top: 5%;
+    margin-left: 5%;
+    color: white;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.faq_list {
+    margin: 2% 5% 5%;
+    width: 90%;
+}
+
+.faq_list li {
+    list-style: none;
+    width: 100%;
+    padding: 5PX;
+}
+
+.faq_list li label {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    color: white;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+.faq_list li label::after {
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+
+.faq_list li input[type="radio"] {
+    display: none;
+}
+
+.faq_list li .content {
+    background: #303030;
+    color: white;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.faq_list li input[type="radio"]:checked+label+.content {
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.faq_list li input[type="radio"]:checked+label::after {
+    transform: rotate(135deg);
+}
+
+.email2_container {
+    width: 40%;
+    gap: 10px;
+    margin-top: 2%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.email2_input {
+    flex: 1;
+    padding: 15px 40px;
+    border-radius: 5px;
+    border: solid 1px red;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.final {
+    margin-top: 5%;
+    padding: 50px 15% 10px;
+    border-top: 6px solid #333;
+    color: #777;
+}
+
+.final h2 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+.final .list_content {
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.final .lists {
+    margin-top: 5%;
+    display: flex; 
+    flex-wrap: wrap; 
+}
+
+.final .list_content a {
+    display: block;
+    text-decoration: none;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+    flex-basis: 50%; 
+}
+
+.final .language-btn {
+    flex-basis: 50%; 
+}
+
+.second_email {
+    color: white;
+    margin-left: 5%;
+}
+
+.copyright-txt {
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 780px) {
+
+    .navbar {
+        padding-left: 3vw;
+        padding-right: 3vw;
+    }
+
+    .img_title {
+        width: 25%;
+    }
+
+    .Options {
+        padding: 5px 10px;
+    }
+
+    .main_text {
+        font-size: 2em;
+    }
+
+    .main_subtext {
+        font-size: 0.8em;
+    }
+
+    .Ptext {
+        font-size: 0.7em;
+    }
+
+    .main_container {
+        width: 90%;
+    }
+
+    .sub_container {
+        width: 90%;
+    }
+
+    .email_container {
+        width: 100%;
+   
+    }
+
+    .email2_container{
+        width: 80%;
+    }
+
+    .getstart-btn {
+        width: 40%;
+        padding: 10px 25px;
+        position:absolute;
+        margin-top: 35%;
+    }
+
+    .Plans_div {
+        grid-template-columns: 1fr; 
+    }
+
+    .Reasons_div {
+        grid-template-columns: 1fr; 
+    }
+
+    .final{
+        margin-top: 25%;
+    }
+    .final .list_content {
+        flex-basis: 100%; 
+    }
+
+    .final .language-btn {
+        flex-basis: 100%; 
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+    .main_text {
+        font-size: 4em;
+        align-items: center;
+    }
+
+    .main_subtext {
+        font-size: 2em;
+    }
+
+    .Ptext {
+        font-size: 1em;
+    }
+
+    .main_container {
+        width: 100%;
+    }
+
+    .sub_container {
+        width: 100%;
+    }
+
+    .email_container {
+        margin-top: 3%;
+        width: 70%;
+    }
+
+    .email2_container{
+        width: 80%;
+        margin-top: 3%;
+    }
+
+    .getstart-btn {
+        width: 20%;
+        padding: 12px 30px;
+        position:absolute;
+        margin-top: 15%;
+    }
+
+    .Plans_div,
+    .Reasons_div {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    }
+
+    .final {
+        margin-top: 15%;
+    }
+}

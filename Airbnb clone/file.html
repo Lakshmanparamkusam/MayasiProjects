@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="file.css">
+    <link rel="icon" href="airbnb-icon.png">
+    <title>Airbnb clone</title>
+</head>
+
+<body>
+    <div class="header_section" id="header_section">
+        <header class="header" id="header">
+
+            <img class="logo" id="logo" src="airbnb-logo.png" alt="Logo">
+
+            <div class="Buttons_div" id="Buttons_div">
+                <button class="button">Anywhere</button>
+                <span class="separator">|</span>
+                <button class="button">Any Week</button>
+                <span class="separator">|</span>
+                <button class="search_button">Add guests <i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+
+
+            <div class="globe-icon">
+                <p>Airbnb your home &emsp;<i class="fas fa-light fa-globe"></i></p>
+            </div>
+
+            <div class="icons-container">
+                <div class="menu-icon">
+                    <i class="fas fa-bars"></i>
+                </div>
+
+                <div class="profile-icon">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+
+            </div>
+
+        </header>
+
+        <div class="container_1" id="container_1">
+            <div class="horizontal-scroll">
+                <button class="btn-scroll" id="btn-scroll-left" onclick="scrollHorizontally(1)"><i
+                        class="fas fa-chevron-left"></i></button>
+                <button class="btn-scroll" id="btn-scroll-right" onclick="scrollHorizontally(-1)"><i
+                        class="fas fa-chevron-right"></i></button>
+
+                <div class="sub-container">
+                    <div class="icon-div">
+                        <i class="fas fa-home"></i>
+                        <span>Rooms</span>
+                    </div>
+                    <div class="icon-div">
+                        <i class="fas fa-globe"></i>
+                        <span>Islands</span>
+                    </div>
+                    <div class="icon-div">
+                        <i class="fas fa-car"></i>
+                        <span>Arctic</span>
+                    </div>
+                    <div class="icon-div">
+                        <i class="fas fa-home"></i>
+                        <span>OMG!</span>
+                    </div>
+                    <div class="icon-div">
+                        <i class="fas fa-globe"></i>
+                        <span>New</span>
+                    </div>
+                    <div class="icon-div">
+                        <i class="fas fa-car"></i>
+                        <span>Vans</span>
+                    </div>
+                    <div class="icon-div">
+                        <i class="fas fa-home"></i>
+                        <span>Pools</span>
+                    </div>
+                    <div class="icon-div">
+                        <i class="fas fa-globe"></i>
+                        <span>Beach</span>
+                    </div>
+                    <div class="icon-div">
+                        <i class="fas fa-car"></i>
+                        <span>Design</span>
+                    </div>
+                    <div class="icon-div">
+                        <i class="fas fa-home"></i>
+                        <span>Surfing</span>
+                    </div>
+                    <div class="icon-div">
+                        <i class="fas fa-globe"></i>
+                        <span>Trending</span>
+                    </div>
+                    <div class="icon-div">
+                        <i class="fas fa-car"></i>
+                        <span>Parks</span>
+                    </div>
+                    <div class="icon-div">
+                        <i class="fas fa-home"></i>
+                        <span>Country</span>
+                    </div>
+                    <div class="icon-div">
+                        <i class="fas fa-globe"></i>
+                        <span>Caves</span>
+                    </div>
+                    <div class="icon-div">
+                        <i class="fas fa-car"></i>
+                        <span>Tropical</span>
+                    </div>
+                    <div class="icon-div">
+                        <i class="fas fa-home"></i>
+                        <span>Cabins</span>
+                    </div>
+                    <div class="icon-div">
+                        <i class="fas fa-globe"></i>
+                        <span>cities</span>
+                    </div>
+                    <div class="icon-div">
+                        <i class="fas fa-car"></i>
+                        <span>Mansions</span>
+                    </div>
+                    <div class="icon-div">
+                        <i class="fas fa-globe"></i>
+                        <span>cities</span>
+                    </div>
+                    <div class="icon-div">
+                        <i class="fas fa-car"></i>
+                        <span>Mansions</span>
+                    </div>
+                    <div class="icon-div">
+                        <i class="fas fa-plane"></i>
+                        <span>cities</span>
+                    </div>
+                    <div class="icon-div">
+                        <i class="fas fa-car"></i>
+                        <span>Mansions</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="filters">
+                <p><i class="fa-solid fa-sliders"></i> &nbsp; Filters </p>
+            </div>
+
+            <div class="switch_div">
+                <p>Display total before taxes</p>
+
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="round_slider"></span>
+                </label>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="main_grid" id="main_grid">
+        <div class="grid_container">
+            <div class="slider">
+                <div class="list">
+                    <div class="item">
+                        <img src="img1.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img2.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img3.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img4.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img5.png" alt="">
+                    </div>
+                </div>
+
+                <div class="heart_icon">
+                    <p>Guest favourite</p>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+
+                <div class="buttons">
+                    <button id="prev"><i class="fas fa-chevron-left"></i></button>
+                    <button id="next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+
+                <ul class="dots">
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+
+            <div class="text_div">
+                <div class="fst_text">
+                    <p><b>Hyderabad, India</b></p>
+                </div>
+                <div class="second_text">
+                    <p>320 Kilometres away <br>
+                        5 nights. 21-26 Mar
+                    </p>
+                </div>
+                <div class="third_text">
+                    <p><b>₹25,799</b> total before taxes</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="grid_container">
+            <div class="slider">
+                <div class="list">
+                    
+                    <div class="item">
+                        <img src="img2.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img3.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img4.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img5.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img1.png" alt="">
+                    </div>
+                </div>
+
+                <div class="heart_icon">
+                    <p>Guest favourite</p>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+
+                <div class="buttons">
+                    <button id="prev"><i class="fas fa-chevron-left"></i></button>
+                    <button id="next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+
+                <ul class="dots">
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+
+            <div class="text_div">
+                <div class="fst_text">
+                    <p><b>Varanasi, India</b></p>
+                </div>
+                <div class="second_text">
+                    <p>1020 Kilometres away <br>
+                        5 nights. 21-26 Mar
+                    </p>
+                </div>
+                <div class="third_text">
+                    <p><b>₹75,799</b> total before taxes</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="grid_container">
+            <div class="slider">
+                <div class="list">
+                    
+                    <div class="item">
+                        <img src="img3.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img4.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img5.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img1.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img2.png" alt="">
+                    </div>
+                </div>
+
+                <div class="heart_icon">
+                    <p>Guest favourite</p>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+
+                <div class="buttons">
+                    <button id="prev"><i class="fas fa-chevron-left"></i></button>
+                    <button id="next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+
+                <ul class="dots">
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+
+            <div class="text_div">
+                <div class="fst_text">
+                    <p><b>Kerala, India</b></p>
+                </div>
+                <div class="second_text">
+                    <p>650 Kilometres away <br>
+                        5 nights. 21-26 Mar
+                    </p>
+                </div>
+                <div class="third_text">
+                    <p><b>₹45,799</b> total before taxes</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="grid_container">
+            <div class="slider">
+                <div class="list">
+                    
+                    <div class="item">
+                        <img src="img4.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img5.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img1.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img2.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img3.png" alt="">
+                    </div>
+                </div>
+
+                <div class="heart_icon">
+                    <p>Guest favourite</p>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+
+                <div class="buttons">
+                    <button id="prev"><i class="fas fa-chevron-left"></i></button>
+                    <button id="next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+
+                <ul class="dots">
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+
+            <div class="text_div">
+                <div class="fst_text">
+                    <p><b>Manali, India</b></p>
+                </div>
+                <div class="second_text">
+                    <p>720 Kilometres away <br>
+                        5 nights. 21-26 Mar
+                    </p>
+                </div>
+                <div class="third_text">
+                    <p><b>₹55,799</b> total before taxes</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="grid_container">
+            <div class="slider">
+                <div class="list">
+                    <div class="item">
+                        <img src="img5.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img1.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img2.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img3.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img4.png" alt="">
+                    </div>
+                </div>
+
+                <div class="heart_icon">
+                    <p>Guest favourite</p>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+
+                <div class="buttons">
+                    <button id="prev"><i class="fas fa-chevron-left"></i></button>
+                    <button id="next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+
+                <ul class="dots">
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+
+            <div class="text_div">
+                <div class="fst_text">
+                    <p><b>Delhi, India</b></p>
+                </div>
+                <div class="second_text">
+                    <p>900 Kilometres away <br>
+                        5 nights. 21-26 Mar
+                    </p>
+                </div>
+                <div class="third_text">
+                    <p><b>₹89,799</b> total before taxes</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="grid_container">
+            <div class="slider">
+                <div class="list">
+                    <div class="item">
+                        <img src="img1.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img2.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img3.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img4.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img5.png" alt="">
+                    </div>
+                </div>
+
+                <div class="heart_icon">
+                    <p>Guest favourite</p>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+
+                <div class="buttons">
+                    <button id="prev"><i class="fas fa-chevron-left"></i></button>
+                    <button id="next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+
+                <ul class="dots">
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+
+            <div class="text_div">
+                <div class="fst_text">
+                    <p><b>Hyderabad, India</b></p>
+                </div>
+                <div class="second_text">
+                    <p>320 Kilometres away <br>
+                        5 nights. 21-26 Mar
+                    </p>
+                </div>
+                <div class="third_text">
+                    <p><b>₹25,799</b> total before taxes</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="grid_container">
+            <div class="slider">
+                <div class="list">
+                    <div class="item">
+                        <img src="img1.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img2.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img3.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img4.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img5.png" alt="">
+                    </div>
+                </div>
+
+                <div class="heart_icon">
+                    <p>Guest favourite</p>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+
+                <div class="buttons">
+                    <button id="prev"><i class="fas fa-chevron-left"></i></button>
+                    <button id="next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+
+                <ul class="dots">
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+
+            <div class="text_div">
+                <div class="fst_text">
+                    <p><b>Hyderabad, India</b></p>
+                </div>
+                <div class="second_text">
+                    <p>320 Kilometres away <br>
+                        5 nights. 21-26 Mar
+                    </p>
+                </div>
+                <div class="third_text">
+                    <p><b>₹25,799</b> total before taxes</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="grid_container">
+            <div class="slider">
+                <div class="list">
+                    <div class="item">
+                        <img src="img1.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img2.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img3.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img4.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img5.png" alt="">
+                    </div>
+                </div>
+
+                <div class="heart_icon">
+                    <p>Guest favourite</p>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+
+                <div class="buttons">
+                    <button id="prev"><i class="fas fa-chevron-left"></i></button>
+                    <button id="next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+
+                <ul class="dots">
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+
+            <div class="text_div">
+                <div class="fst_text">
+                    <p><b>Hyderabad, India</b></p>
+                </div>
+                <div class="second_text">
+                    <p>320 Kilometres away <br>
+                        5 nights. 21-26 Mar
+                    </p>
+                </div>
+                <div class="third_text">
+                    <p><b>₹25,799</b> total before taxes</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="explore_div"> 
+        <p>Continue exploring amazing pools</p>
+        <button>Show more</button>
+    </div>
+
+    <div class="footer_div" id="footer_div">
+        <div class="footer_1">
+            <div class="section_1">
+                <p>Inspiration for future getaways</p>
+            </div>
+
+            <div class="section_2">
+                <p>Popular</p>
+                <p>Arts & culture</p>
+                <p>Outdoors</p>
+                <p>Mountains</p>
+                <p>Beach</p>
+                <p>Unique stays</p>
+                <p>Categories</p>
+                <p>Things to do</p>
+
+            </div>
+
+            <div class="section_3">
+                <div class="future_gateways">
+                    <p><b>Canmore</b><br><span>Flat rentals</span></p>
+                </div>
+                <div class="future_gateways">
+                    <p><b>Benalmadena</b><br><span>Flat rentals</span></p>
+                </div>
+                <div class="future_gateways">
+                    <p><b>Marbella</b><br><span>Bnchfront rentals</span></p>
+                </div>
+                <div class="future_gateways">
+                    <p><b>Mijas</b><br><span>Flat rentals</span></p>
+                </div>
+                <div class="future_gateways">
+                    <p><b>Prescott</b><br><span>Pet-friendly rentals</span></p>
+                </div>
+                <div class="future_gateways">
+                    <p><b>Scottsdale</b><br><span>Mansion rentals</span></p>
+                </div>
+                <div class="future_gateways">
+                    <p><b>Tucson</b><br><span>Apartment rentals</span></p>
+                </div>
+                <div class="future_gateways">
+                    <p><b>Jasper</b><br><span>Cabin rentals</span></p>
+                </div>
+                <div class="future_gateways">
+                    <p><b>Mountain View</b><br><span>Holiday rentals</span></p>
+                </div>
+                <div class="future_gateways">
+                    <p><b>Devonport</b><br><span>Holiday rentals</span></p>
+                </div>
+                <div class="future_gateways">
+                    <p><b>Mallacoota</b><br><span>Beach house rentals</span></p>
+                </div>
+                <div class="future_gateways">
+                    <p><b>Ibiza</b><br><span>Holiday rentals</span></p>
+                </div>
+                <div class="future_gateways">
+                    <p><b>Anaheim</b><br><span>Flat rentals</span></p>
+                </div>
+                <div class="future_gateways">
+                    <p><b>Monterey</b><br><span>Flat rentals</span></p>
+                </div>
+                <div class="future_gateways">
+                    <p><b>Devonport</b><br><span>Holiday rentals</span></p>
+                </div>
+                <div class="future_gateways">
+                    <p><b>Mallacoota</b><br><span>Beach house rentals</span></p>
+                </div>
+                <div class="future_gateways">
+                    <p><b>Ibiza</b><br><span>Holiday rentals</span></p>
+                </div>
+                <div class="future_gateways">
+                    <p><b>Anaheim</b><br><span>Flat rentals</span></p>
+                </div>
+                <div class="future_gateways">
+                    <p><b>Mountain View</b><br><span>Holiday rentals</span></p>
+                </div>
+                <div class="future_gateways">
+                    <p><b>Devonport</b><br><span>Holiday rentals</span></p>
+                </div>
+                <div class="future_gateways">
+                    <p><b>Mallacoota</b><br><span>Beach house rentals</span></p>
+                </div>
+                <div class="future_gateways">
+                    <p><b>Ibiza</b><br><span>Holiday rentals</span></p>
+                </div>
+                <div class="future_gateways">
+                    <p><b>Anaheim</b><br><span>Flat rentals</span></p>
+                </div>
+                <div class="future_gateways">
+                    <p><b>Monterey</b><br><span>Flat rentals</span></p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer_2">
+            <div class="support_div">
+                <p>Support</p>
+                <a href="#">Help Centre</a>
+                <a href="#">AirCover</a>
+                <a href="#">Anti-discrimination</a>
+                <a href="#">Disability support</a>
+                <a href="#">Cancellation optons</a>
+                <a href="#">Reporting neighbourhood concern</a>
+            </div>
+            <div class="hosting_div">
+                <p>Hosting</p>
+                <a href="#">Airbnb your home</a>
+                <a href="#">AirCover for Hosts</a>
+                <a href="#">Hosting resources</a>
+                <a href="#">Community forum</a>
+                <a href="#">Hosting respinsibly</a>
+                <a href="#">Join a free Hosting class</a>
+            </div>
+            <div class="airbnb_div">
+                <p>Airbnb</p>
+                <a href="#">Newsroom</a>
+                <a href="#">New features</a>
+                <a href="#">Careers</a>
+                <a href="#">Investors</a>
+                <a href="#">Airbnb.org emergency stayes</a>
+            </div>
+        </div> 
+
+
+        <div class="footer_3">
+            <div class="final_1">
+                <a><i class="fa-regular fa-copyright"></i> 2024 Airbnb, Inc.</a>
+                <p>.</p>
+                <a href="#">Privacy</a>
+                <p>.</p>
+                <a href="#">Terms</a>
+                <p>.</p>
+                <a href="#">Sitemap</a>
+                <p>.</p>
+                <a href="#">Company details</a>
+            </div>
+            <div class="final_2">
+                <h6><i class="fa-solid fa-globe"></i>English (IN)</h6>
+                <h6><i class="fa-solid fa-indian-rupee-sign"></i>INR</h6>
+                <h6><i class="fa-brands fa-square-facebook"></i></h6>
+                <h6><i class="fa-brands fa-square-twitter"></i></h6>
+                <h6><i class="fa-brands fa-square-instagram"></i></h6>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="file.js"></script>
+</body>
+
+</html>
