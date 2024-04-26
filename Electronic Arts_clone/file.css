@@ -1,0 +1,1925 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  height: 2.5em;
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+
+.icons_div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 32px 0 0;
+  position: relative;
+  margin: 0;
+}
+
+.icon {
+  align-items: center;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  padding-inline-start: 40px;
+  color: #999595;
+  z-index: 2;
+}
+
+.icon img {
+  height: 20px;
+  width: 30px;
+}
+
+.icon:hover {
+  color: white;
+}
+
+.menubar_main {
+  height: 3.5em;
+  width: 100%;
+}
+
+.menubar_icon {
+  height: 3.5em;
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bars_div {
+  font-size: 20px;
+}
+
+.menubar_content {
+  display: none;
+  width: 350px;
+  height: 566px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  position: absolute;
+  z-index: 1;
+  overflow: auto;
+
+}
+
+
+.menu_list {
+  width: 290px;
+  height: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid;
+}
+
+.menu_list:hover {
+  color: red;
+  border-bottom: red;
+}
+
+.menu_list .fa-angle-down {
+  transition: transform 0.2s;
+}
+
+.menu_list:hover .fa-angle-down {
+  transform: rotate(180deg);
+}
+
+
+.browseGames_list,
+.platformGames_list {
+  width: 290px;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid;
+  color: #ccc;
+}
+
+.menu_list p,
+.browseGames_list p,
+.platformGames_list p {
+  font-size: 17px;
+  display: inline-block;
+  width: 265px;
+}
+
+.browseGames_list:hover {
+  color: red;
+}
+
+.platformGames_list:hover {
+  color: red;
+}
+
+.browseGames_list .fa-plus {
+  transition: transform 0.2s;
+}
+
+.browseGames_list:hover .fa-plus {
+  transform: rotate(135deg);
+}
+
+.platformGames_list .fa-plus {
+  transition: transform 0.2s;
+}
+
+.platformGames_list:hover .fa-plus {
+  transform: rotate(135deg);
+}
+
+.browse_list,
+.platform_list,
+.experience_list,
+.about_list,
+.commitment_list,
+.resource_list {
+  height: 210px;
+  width: 290px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.browse_list p,
+.platform_list p,
+.experience_list p,
+.about_list p,
+.commitment_list p,
+.resource_list p {
+  margin-left: 40px;
+}
+
+.browseGames_list,
+.platformGames_list,
+.browse_list,
+.platform_list,
+.experience_list,
+.about_list,
+.commitment_list,
+.resource_list {
+  display: none;
+}
+
+.menubar_main {
+  display: none;
+}
+
+.dropdown_main {
+  height: 3.5em;
+  width: 100%;
+  border: 1px solid;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+.dropdown_container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 20px;
+  position: relative;
+  margin: 0;
+}
+
+.title_div img {
+  margin-left: 30px;
+  width: 200px;
+  height: 70px;
+}
+
+.dropdown_div {
+  width: 47em;
+  height: 3.5em;
+  margin-left: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown-games {
+  position: relative;
+  display: inline-block;
+}
+
+.games-btn {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  top: 40px;
+  left: 0;
+  z-index: 1;
+}
+
+.grid-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  width: 400px;
+}
+
+.browse-content {
+  margin-left: 20px;
+}
+
+.platform-content {
+  margin-right: 20px;
+  margin-bottom: 40px;
+}
+
+.browse-content h3,
+.platform-content h3 {
+  padding: 15px 0px;
+  margin-left: 5px;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+
+.commitment-content,
+.experience-content {
+  width: 200px;
+}
+
+.about-content {
+  width: 150px;
+}
+
+.resource-content {
+  width: 250px;
+}
+
+.browse-content a,
+.platform-content a,
+.experience-content a,
+.about-content a,
+.commitment-content a,
+.resource-content a {
+  color: #817f7f;
+  padding: 10px 10px;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  margin-left: 5px;
+}
+
+.dropdown-content a:hover {
+  color: red;
+}
+
+.games-btn:hover {
+  color: red;
+}
+
+.dropdown-games:hover .dropdown-content {
+  display: block;
+}
+
+.games-btn .fa-angle-down {
+  transition: transform 0.2s;
+}
+
+.dropdown-games:hover .fa-angle-down {
+  transform: rotate(180deg);
+}
+
+.fa-angle-down {
+  font-size: 15px;
+}
+
+
+.fixed-dropdown-main {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.smallerDivices_div {
+  display: none;
+  height: 400px;
+  width: 100%;
+  background-color: rgb(110, 86, 207);
+}
+
+.smallerDivices_div img {
+  height: 100px;
+  width: 250px;
+  margin-top: 30px;
+  margin-left: 60px;
+}
+
+.mobile_text {
+  color: white;
+  font-size: large;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.getButton {
+  width: 250px;
+  height: 40px;
+  margin-left: 60px;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+.battleButton {
+  width: 250px;
+  height: 40px;
+  margin-left: 60px;
+  margin-top: 20px;
+  background-color: black;
+  border: 2px solid white;
+  border-radius: 3px;
+  color: white;
+  transition: 0.3s;
+}
+
+.leftMain_div {
+  display: none;
+  height: 670px;
+  width: 410px;
+  position: absolute;
+  z-index: 1;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  overflow: auto;
+}
+
+.ellipsis_div i {
+  font-size: 20px;
+  transform: 0.3s;
+}
+
+.ellipsis_div i:hover {
+  color: red;
+  transform: scale(1.5);
+}
+
+
+.left_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  width: 80%;
+  margin-top: 10%;
+  margin-left: 7%;
+}
+
+.left_header h3 {
+  color: #817f7f;
+}
+
+.left_header i {
+  font-size: large;
+}
+
+.left_header h3:hover {
+  color: red;
+}
+
+.left_header i:hover {
+  color: red;
+}
+
+.fst_img {
+  background-image: url("images/left_img1.png");
+  height: 330px;
+  width: 330px;
+  margin-top: 7%;
+  margin-left: 7%;
+
+}
+
+.fst_img img {
+  position: absolute;
+  height: 70px;
+  width: 130px;
+  margin: 110px;
+  transition: 0.1s;
+}
+
+.fst_img img:hover {
+  transform: scale(1.2);
+}
+
+.left_grid {
+  width: 330px;
+  margin-top: 10%;
+  margin-left: 7%;
+  margin-bottom: 15%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.second_img {
+  background-image: url("images/left_img2.jpg");
+}
+
+.second_img,
+.third_img,
+.fourth_img,
+.fifth_img,
+.sixth_img,
+.seventh_img {
+  height: 150px;
+  width: 150px;
+  background-position: center;
+  background-size: cover;
+}
+
+.second_img img {
+  position: absolute;
+  height: 50px;
+  width: 80px;
+  margin-top: 60px;
+  margin-left: 25px;
+  transition: 0.1s;
+}
+
+.second_img img:hover {
+  transform: scale(1.2);
+}
+
+.third_img {
+  background-image: url("images/left_img3.png");
+}
+
+.third_img img {
+  position: absolute;
+  height: 20px;
+  width: 100px;
+  margin-top: 75px;
+  margin-left: 25px;
+  transition: 0.1s;
+}
+
+.third_img img:hover {
+  transform: scale(1.2);
+}
+
+.fourth_img {
+  background-image: url("images/left_img4.jpg");
+}
+
+.fourth_img img {
+  position: absolute;
+  height: 70px;
+  width: 100px;
+  margin-top: 45px;
+  margin-left: 25px;
+  transition: 0.1s;
+}
+
+.fourth_img img:hover {
+  transform: scale(1.2);
+}
+
+.fifth_img {
+  background-image: url("images/left_img5.jpg");
+}
+
+.fifth_img img {
+  position: absolute;
+  height: 40px;
+  width: 80px;
+  margin-top: 55px;
+  margin-left: 35px;
+  transition: 0.1s;
+}
+
+.fifth_img img:hover {
+  transform: scale(1.2);
+}
+
+.sixth_img {
+  background-image: url("images/left_img6.jpg");
+}
+
+.sixth_img img {
+  position: absolute;
+  height: 40px;
+  width: 80px;
+  margin-top: 55px;
+  margin-left: 35px;
+  transition: 0.1s;
+}
+
+.sixth_img img:hover {
+  transform: scale(1.2);
+}
+
+.seventh_img {
+  background-image: url("images/left_img7.jpg");
+}
+
+.seventh_img img {
+  position: absolute;
+  height: 30px;
+  width: 80px;
+  margin-top: 55px;
+  margin-left: 35px;
+  transition: 0.1s;
+}
+
+.seventh_img img:hover {
+  transform: scale(1.2);
+}
+
+.background {
+  background-image: url(images/backgrnd.png);
+  background-size: cover;
+  position: relative;
+  height: 450px;
+}
+
+.battlefield_main {
+  height: 350px;
+  width: 600px;
+  margin-top: 50px;
+  margin-left: 900px;
+  border: 1px solid crimson;
+  position: absolute;
+}
+
+.Battlefield_img {
+  position: absolute;
+  height: 130px;
+  margin-left: 1000px;
+  margin-top: 70px;
+
+}
+
+.battle_text {
+  position: absolute;
+  color: white;
+  font-size: 16px;
+  margin-left: 790px;
+  margin-top: 190px;
+}
+
+.battle_buttons {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  width: 430px;
+  margin-left: 1000px;
+  margin-top: 280px;
+}
+
+.getBtn {
+  width: 200px;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+.battleBtn {
+  width: 200px;
+  background-color: black;
+  border: 2px solid white;
+  border-radius: 3px;
+  color: white;
+  transition: 0.3s;
+}
+
+.getBtn:hover {
+  transform: scale(1.1);
+}
+
+.battleBtn:hover {
+  transform: scale(1.1);
+}
+
+.featuredGames_div {
+  position: relative;
+  margin-left: 200px;
+  margin-right: 199px;
+}
+
+.featuredGames_text {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 23px;
+}
+
+.featuredGames_imgs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.featured_img1 {
+  background-image: url("images/Featured_img1.png");
+}
+
+.featured_img2 {
+  background-image: url("images/Featured_img2.png");
+}
+
+.featured_img3 {
+  background-image: url("images/Featured_img3.png");
+}
+
+.featured_img4 {
+  background-image: url("images/Featured_img4.png");
+}
+
+.featured_img5 {
+  background-image: url("images/Featured_img5.png");
+}
+
+.featured_img6 {
+  background-image: url("images/Featured_img6.png");
+}
+
+.featured_img1,
+.featured_img2,
+.featured_img3,
+.featured_img4,
+.featured_img5,
+.featured_img6 {
+  height: 350px;
+  width: 350px;
+  background-position: center;
+  background-size: cover;
+  display: block;
+  position: relative;
+}
+
+.featured_img1 img {
+  margin-top: 160px;
+  margin-left: 100px;
+  position: absolute;
+}
+
+.featured_img2 img {
+  position: absolute;
+  height: 40px;
+  width: 160px;
+  margin-top: 160px;
+  margin-left: 100px;
+}
+
+.featured_img3 img {
+  position: absolute;
+  height: 80px;
+  width: 100px;
+  margin-top: 150px;
+  margin-left: 125px;
+}
+
+.featured_img4 img {
+  position: absolute;
+  height: 70px;
+  width: 160px;
+  margin-top: 140px;
+  margin-left: 90px;
+}
+
+.featured_img5 img {
+  position: absolute;
+  height: 70px;
+  width: 160px;
+  margin-top: 140px;
+  margin-left: 90px;
+}
+
+.featured_img6 img {
+  position: absolute;
+  height: 70px;
+  width: 180px;
+  margin-top: 140px;
+  margin-left: 90px;
+}
+
+.featured_img1:hover img,
+.featured_img2:hover img {
+  margin-top: 100px;
+}
+
+.featured_img3:hover img,
+.featured_img4:hover img,
+.featured_img5:hover img,
+.featured_img6:hover img {
+  margin-top: 80px;
+}
+
+
+.hover_div {
+  position: absolute;
+  height: 350px;
+  width: 350px;
+  background-image: linear-gradient(to right, blue, red);
+  opacity: 0;
+}
+
+.hover_div:hover {
+  opacity: 0.7;
+}
+
+.hover-text a {
+  position: absolute;
+  text-decoration: none;
+  color: #fff;
+  margin-left: 120px;
+  margin-top: 170px;
+  opacity: 0;
+  font-size: 20px;
+
+}
+
+.featured_img1:hover .hover-text a,
+.featured_img2:hover .hover-text a,
+.featured_img3:hover .hover-text a,
+.featured_img4:hover .hover-text a,
+.featured_img5:hover .hover-text a,
+.featured_img6:hover .hover-text a {
+  opacity: 1;
+}
+
+
+
+.latestBtn_div {
+  width: 150px;
+  height: 60px;
+  position: relative;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: 500px;
+
+}
+
+.latestBtn {
+  width: 160px;
+  height: 55px;
+  border-radius: 3px;
+  font-size: 17px;
+  transition: 0.3s;
+}
+
+.latestBtn:hover {
+  transform: scale(1.1);
+}
+
+.latestUpdates_title {
+  height: 60px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.latestUpdates_title h1 {
+  margin-left: 450px;
+  font-size: 40px;
+}
+
+.latestUpdates_content {
+  height: 60px;
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.latestUpdates_content button {
+  height: 60px;
+  border: none;
+  background: none;
+  font-size: 17px;
+}
+
+.latestUpdates_content span {
+  font-size: 25px;
+  color: #ccc;
+}
+
+.latestUpdates_content button:hover {
+  background-color: #ccc;
+
+}
+
+.latestUpdates_content button:active {
+  border-bottom: 2px solid red;
+}
+
+.latestUpdates_grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.grid_content {
+  height: 530px;
+  width: 330px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.grid_content:hover {
+  transform: translateY(-15px);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.8);
+}
+
+.grid_img1 img {
+  width: 330px;
+  height: 230px;
+}
+
+.grid_text {
+  width: 310px;
+  margin-left: 20px;
+  margin-right: 10px;
+
+}
+
+.grid_text h6 {
+  font-size: 15px;
+}
+
+.grid_text span {
+  color: red;
+}
+
+.grid_text h4 {
+  font-size: 22px;
+}
+
+.grid_text p {
+  font-size: 18.5px;
+  color: #504e4e;
+}
+
+.mobile_EAplay {
+  display: none;
+}
+
+.EAplay_content {
+  display: none;
+}
+
+.EAplay_main {
+  background-image: url("images/EAplay_backgrnd.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-top: 50px;
+  height: 400px;
+}
+
+.EAplay_main .EAimg1 {
+  margin-left: 820px;
+  height: 400px;
+  width: 700px;
+}
+
+.EAplay_main .EAimg2 {
+  position: absolute;
+  top: 5px;
+  left: 150px;
+}
+
+.EAimg2 img {
+  height: 120px;
+  width: 260px;
+  margin-top: 50px;
+}
+
+.EAplay_main .EAplay_text {
+  position: absolute;
+  top: 40%;
+  left: 11%;
+  color: white;
+  font-size: 20px;
+  max-width: 30%;
+}
+
+.EAplay_main .joinBtn_div {
+  position: absolute;
+  top: 70%;
+  left: 11%;
+}
+
+.joinBtn_div button {
+  width: 160px;
+  height: 55px;
+  border: 2px solid white;
+  border-radius: 3px;
+  font-size: 17px;
+  transition: 0.3s;
+  background: transparent;
+  color: white;
+}
+
+.joinBtn_div button:hover {
+  transform: scale(1.1);
+}
+
+.footer_1 {
+  height: 120px;
+  background-color: rgb(28, 133, 174);
+}
+
+.footer1_content {
+  height: 100px;
+  margin-left: 160px;
+  margin-right: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer1_text {
+  height: 80px;
+  width: 470px;
+}
+
+.learnBtn {
+  width: 160px;
+  height: 55px;
+  border: 2px solid black;
+  border-radius: 3px;
+  font-size: 17px;
+  transition: 0.3s;
+  background: transparent;
+  color: black;
+}
+
+.learnBtn:hover {
+  transform: scale(1.1);
+}
+
+.footer_2 {
+  height: 300px;
+  background-color: #e7e1e1;
+}
+
+.footer2_content {
+  height: 300px;
+  margin-left: 160px;
+  margin-right: 190px;
+  border: 1px solid #e7e1e1;
+}
+
+.footer2_content .section_1 {
+  height: 50px;
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #504e4e;
+}
+
+.section_1 span {
+  color: red;
+}
+
+.section_2 {
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.section2_content1 {
+  height: 100px;
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+
+.content2 {
+  height: 100px;
+  width: 250px;
+
+}
+
+.icons_div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer_3 {
+  height: 300px;
+}
+
+.footer3_content {
+  height: 130px;
+  margin-left: 160px;
+  margin-right: 190px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer3_content img {
+  height: 80px;
+  width: 80px;
+  margin-top: 30px;
+
+}
+
+.footer3_content1 {
+  height: 100px;
+  width: 1050px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer3_list {
+  height: 100px;
+  width: 700px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.footer3_list p {
+  font-size: 20px;
+}
+
+.languageBtn {
+  height: 65px;
+  width: 170px;
+  border-radius: 3px;
+  transition: 0.3s;
+  border: 1px solid;
+}
+
+.languageBtn p {
+  margin: 5px;
+}
+
+.languageBtn img {
+  width: 20px;
+  height: 10px;
+  margin: 10px;
+}
+
+.languageBtn:hover {
+  transform: scale(1.1);
+}
+
+.footer3_content2 {
+  height: 150px;
+  width: 1050px;
+  margin-left: 275px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.content2_list {
+  height: 150px;
+  width: 600px;
+
+}
+
+.content2_list p {
+  font-size: 17px;
+}
+
+.content2_img {
+  height: 150px;
+  width: 145px;
+
+}
+
+.content2_img img {
+  margin-top: 100px;
+}
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1400px) {
+
+  .smallerDivices_div {
+    display: none;
+  }
+
+  .menubar_main {
+    display: block;
+  }
+
+  .menubar_content {
+    height: 1280px;
+  }
+
+  .dropdown_main {
+    display: none;
+  }
+
+  .Battlefield_img {
+    height: 90px;
+    margin-left: 650px;
+    margin-top: 70px;
+
+  }
+
+  .battle_text {
+    font-size: 12px;
+    margin-left: 500px;
+    margin-top: 170px;
+  }
+
+  .battle_buttons {
+    height: 60px;
+    width: 330px;
+    margin-left: 650px;
+    margin-top: 250px;
+  }
+
+  .getBtn {
+    width: 150px;
+
+  }
+
+  .battleBtn {
+    width: 150px;
+  }
+
+
+  .featuredGames_div {
+    position: relative;
+    margin-left: 60px;
+    margin-right: 50px;
+  }
+
+  .featuredGames_text {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 23px;
+  }
+
+  .featuredGames_imgs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .featured_img1,
+  .featured_img2,
+  .featured_img3,
+  .featured_img4,
+  .featured_img5,
+  .featured_img6 {
+    height: 250px;
+    width: 250px;
+  }
+
+  .featured_img1 img {
+    margin-top: 100px;
+    margin-left: 70px;
+    position: absolute;
+  }
+
+  .featured_img2 img {
+    position: absolute;
+    height: 30px;
+    width: 160px;
+    margin-top: 100px;
+    margin-left: 70px;
+  }
+
+  .featured_img3 img {
+    position: absolute;
+    height: 60px;
+    width: 80px;
+    margin-top: 120px;
+    margin-left: 95px;
+  }
+
+  .featured_img4 img {
+    position: absolute;
+    height: 70px;
+    width: 120px;
+    margin-top: 100px;
+    margin-left: 70px;
+  }
+
+  .featured_img5 img {
+    position: absolute;
+    height: 50px;
+    width: 140px;
+    margin-top: 120px;
+    margin-left: 70px;
+  }
+
+  .featured_img6 img {
+    position: absolute;
+    height: 50px;
+    width: 160px;
+    margin-top: 120px;
+    margin-left: 60px;
+  }
+
+  .hover_div {
+    display: none;
+  }
+
+  .latestBtn_div {
+    margin-left: 370px;
+
+  }
+
+  .latestUpdates_title h1 {
+    margin-left: 340px;
+    font-size: 40px;
+  }
+
+
+  .latestUpdates_grid {
+    margin-top: 50px;
+    gap: 20px;
+  }
+
+  .grid_content {
+    height: 450px;
+    width: 280px;
+
+  }
+
+  .grid_img1 img {
+    width: 280px;
+    height: 190px;
+  }
+
+  .grid_text {
+    width: 270px;
+    margin-left: 20px;
+    margin-right: 10px;
+
+  }
+
+  .grid_text h6 {
+    font-size: 14px;
+  }
+
+
+  .grid_text h4 {
+    font-size: 17px;
+  }
+
+  .grid_text p {
+    font-size: 15px;
+  }
+
+  .mobile_EAplay {
+    display: none;
+  }
+
+  .EAplay_content {
+    display: none;
+  }
+
+  .EAplay_main {
+    background-image: url("images/EAplay_backgrnd.png");
+    height: 350px;
+  }
+
+  .EAplay_main .EAimg1 {
+    margin-left: 505px;
+    height: 350px;
+    width: 500px;
+  }
+
+  .EAplay_main .EAimg2 {
+    position: absolute;
+    left: 90px;
+  }
+
+  .EAimg2 img {
+    height: 100px;
+    width: 150px;
+  }
+
+  .EAplay_main .EAplay_text {
+    position: absolute;
+    top: 45%;
+    left: 11%;
+    color: white;
+    font-size: 17px;
+    max-width: 30%;
+  }
+
+  .EAplay_main .joinBtn_div {
+    position: absolute;
+    top: 80%;
+    left: 11%;
+  }
+
+
+  .footer_1 {
+    height: 120px;
+    background-color: rgb(28, 133, 174);
+  }
+
+  .footer1_content {
+    height: 100px;
+    margin-left: 90px;
+    margin-right: 80px;
+  }
+
+  .footer1_text {
+    height: 60px;
+    width: 570px;
+  }
+
+
+  .footer2_content {
+    height: 300px;
+    margin-left: 90px;
+    margin-right: 120px;
+    border: 1px solid #e7e1e1;
+  }
+
+
+  .section2_content1 {
+    height: 100px;
+    width: 500px;
+
+  }
+
+  .content2 {
+    height: 100px;
+    width: 200px;
+  }
+
+
+  .footer3_content {
+    height: 130px;
+    margin-left: 90px;
+    margin-right: 120px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer3_content img {
+    height: 60px;
+    width: 60px;
+    margin-top: 30px;
+
+  }
+
+  .footer3_content1 {
+    height: 100px;
+    width: 780px;
+    margin-left: 50px;
+    margin-top: 30px;
+  }
+
+  .footer3_list {
+    height: 100px;
+    width: 500px;
+
+  }
+
+  .footer3_list p {
+    font-size: 15px;
+  }
+
+  .languageBtn {
+    height: 60px;
+    width: 150px;
+    border-radius: 3px;
+    transition: 0.3s;
+    border: 1px solid;
+  }
+
+  .languageBtn p {
+    margin: 0px;
+  }
+
+  .languageBtn img {
+    width: 20px;
+    height: 10px;
+    margin: 10px;
+  }
+
+
+  .footer3_content2 {
+    height: 150px;
+    width: 780px;
+    margin-left: 165px;
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .content2_list {
+    height: 150px;
+    width: 600px;
+
+  }
+
+  .content2_list p {
+    font-size: 14px;
+  }
+
+  .content2_img {
+    height: 130px;
+    width: 135px;
+
+  }
+
+  .content2_img img {
+    margin-top: 80px;
+  }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 768px) {
+
+  .background {
+    background-image: url(images/backgrnd.png);
+    background-size: cover;
+    position: relative;
+    height: 150px;
+  }
+
+  .smallerDivices_div {
+    display: block;
+  }
+
+  .menubar_main {
+    display: block;
+  }
+
+  .dropdown_main {
+    display: none;
+  }
+
+  .Battlefield_img {
+    display: none;
+
+  }
+
+  .battle_text {
+    display: none;
+  }
+
+  .battle_buttons {
+    display: none;
+  }
+
+  .featuredGames_div {
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .featuredGames_text {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 15px;
+  }
+
+  .featuredGames_imgs {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+
+
+  .featured_img1,
+  .featured_img2,
+  .featured_img3,
+  .featured_img4,
+  .featured_img5,
+  .featured_img6 {
+    height: 330px;
+    width: 330px;
+  }
+
+  .featured_img1 img {
+    margin-top: 160px;
+    margin-left: 100px;
+    position: absolute;
+  }
+
+  .featured_img2 img {
+    position: absolute;
+    height: 40px;
+    width: 160px;
+    margin-top: 160px;
+    margin-left: 100px;
+  }
+
+  .featured_img3 img {
+    position: absolute;
+    height: 80px;
+    width: 100px;
+    margin-top: 150px;
+    margin-left: 125px;
+  }
+
+  .featured_img4 img {
+    position: absolute;
+    height: 70px;
+    width: 160px;
+    margin-top: 140px;
+    margin-left: 90px;
+  }
+
+  .featured_img5 img {
+    position: absolute;
+    height: 70px;
+    width: 160px;
+    margin-top: 140px;
+    margin-left: 90px;
+  }
+
+  .featured_img6 img {
+    position: absolute;
+    height: 70px;
+    width: 180px;
+    margin-top: 140px;
+    margin-left: 90px;
+  }
+
+  .featured_img1:hover img,
+  .featured_img2:hover img {
+    margin-top: 100px;
+  }
+
+  .featured_img3:hover img,
+  .featured_img4:hover img,
+  .featured_img5:hover img,
+  .featured_img6:hover img {
+    margin-top: 80px;
+  }
+
+
+  .hover_div {
+    display: none;
+    position: absolute;
+    height: 350px;
+    width: 350px;
+    background-image: linear-gradient(to right, blue, red);
+    opacity: 0;
+  }
+
+
+  .latestUpdates_title {
+    height: 60px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .latestUpdates_title h1 {
+    margin-left: 100px;
+    font-size: 25px;
+  }
+
+  .latestUpdates_content {
+    height: 60px;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .latestUpdates_content button {
+    height: 60px;
+    border: none;
+    background: none;
+    font-size: 10px;
+    white-space: nowrap;
+    padding: 0 10px;
+  }
+
+  .latestUpdates_content span {
+    font-size: 25px;
+    color: #ccc;
+  }
+
+  .latestUpdates_content button:hover {
+    background-color: #ccc;
+
+  }
+
+  .latestUpdates_content button:active {
+    border-bottom: 2px solid red;
+  }
+
+  .latestUpdates_grid {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+  }
+
+  .grid_content {
+    height: 300px;
+    width: 330px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+  }
+
+  .grid_content:hover {
+    transform: translateY(-15px);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.8);
+  }
+
+  .grid_img1 img {
+    display: none;
+    width: 330px;
+    height: 230px;
+  }
+
+  .grid_text {
+    width: 310px;
+    margin-left: 20px;
+    margin-right: 10px;
+
+  }
+
+  .grid_text h6 {
+    font-size: 15px;
+  }
+
+  .grid_text span {
+    color: red;
+  }
+
+  .grid_text h4 {
+    font-size: 22px;
+  }
+
+  .grid_text p {
+    font-size: 18.5px;
+    color: #504e4e;
+  }
+
+  .mobile_EAplay {
+    display: block;
+    margin-top: 50px;
+    height: 200px;
+    background-image: url(images/EAplay_backgrnd.png);
+    background-size: cover;
+  }
+
+  .mobile_EAplay img {
+    height: 200px;
+    margin-left: 40px;
+  }
+
+  .EAplay_content {
+    display: block;
+    height: 300px;
+    background-image: url(images/EAplay_backgrnd.png);
+    background-size: cover;
+  }
+
+  .EAplay_content img {
+    height: 100px;
+    width: 190px;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+
+  .EAplay_content p {
+    color: white;
+    top: 0;
+    margin-left: 30px;
+    margin-right: 20px;
+  }
+
+  .EAplay_content button {
+    width: 300px;
+    height: 55px;
+    border: 2px solid white;
+    border-radius: 3px;
+    font-size: 17px;
+    color: white;
+    background: transparent;
+    margin-left: 30px;
+  }
+
+  .EAplay_main {
+    display: none;
+
+  }
+
+  .footer_1 {
+    height: 200px;
+    background-color: rgb(28, 133, 174);
+    border: 1px solid rgb(28, 133, 174);
+  }
+
+  .footer1_content {
+    height: 100px;
+    margin-left: 30px;
+    margin-right: 20px;
+    display: block;
+    align-items: center;
+  }
+
+  .footer1_text {
+    height: 80px;
+    width: 320px;
+  }
+
+  .footer1_text h1 {
+    font-size: 10px;
+  }
+
+  .latestBtn_div{
+    margin-left: 75px;
+  }
+
+
+  .footer_2 {
+    height: 400px;
+    background-color: #e7e1e1;
+  }
+
+  .footer2_content {
+    height: 350px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 1px solid #e7e1e1;
+  }
+
+  .footer2_content .section_1 {
+    height: 50px;
+    margin-top: 60px;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #504e4e;
+  }
+
+  .section_1 p {
+    font-size: 12px;
+  }
+
+  .section_1 span {
+    color: red;
+  }
+
+  .section_2 {
+    height: 180px;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  .section2_content1 {
+    height: 150px;
+    width: 300px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+
+  .content2 {
+    height: 100px;
+    width: 250px;
+
+  }
+
+  .icons_div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer_3 {
+    height: 750px;
+  }
+
+  .footer3_content {
+    height: 130px;
+    margin-left: 20px;
+    margin-right: 0px;
+    display: block;
+    justify-content: space-between;
+  }
+
+  .footer3_content img {
+    height: 80px;
+    width: 80px;
+    margin-top: 30px;
+
+  }
+
+  .footer3_content1 {
+    height: 100px;
+    width: 350px;
+    margin-top: 10px;
+    display: block;
+    justify-content: space-between;
+  }
+
+  .footer3_list {
+    height: 100px;
+    width: 370px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  .footer3_list p {
+    font-size: 17px;
+  }
+
+  .languageBtn {
+    height: 85px;
+    width: 280px;
+    border-radius: 3px;
+    margin-top: 150px;
+    border: 1px solid;
+  }
+
+  .languageBtn p {
+    margin: 5px;
+    font-size: 25px;
+  }
+
+  .languageBtn img {
+    width: 40px;
+    height: 20px;
+    margin: 10px;
+  }
+
+
+  .footer3_content2 {
+    height: 150px;
+    width: 350px;
+    margin-top: 380px;
+    margin-left: 10px;
+    display: block;
+
+  }
+
+  .content2_list {
+    height: 150px;
+    width: 350px;
+
+  }
+
+  .content2_list p {
+    font-size: 17px;
+  }
+
+  .content2_img {
+    height: 150px;
+    width: 145px;
+
+  }
+
+  .content2_img img {
+    margin-top: 30px;
+  }
+
+}
