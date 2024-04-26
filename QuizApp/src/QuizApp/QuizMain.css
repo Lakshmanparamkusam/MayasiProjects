@@ -1,0 +1,75 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  }
+
+  body{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    background-color: #cb3aa7;
+    min-height: 100vh;
+    width: 100%;
+  }
+
+  .container{
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 1px #a2a3a3;
+    padding: 30px;
+  }
+
+  .option-button {
+    background-color: #f2f2f2;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .active {
+    background-color: #27642a;
+    color: #fff;
+  }
+
+  .sub_container h2 ,p{
+    padding: 10px 0px;
+  }
+
+  .sub_container p{
+    font-weight: 600;
+  }
+
+  .question{
+    box-shadow: 1px 1px 1px 1px #abaaaa;
+    margin-bottom: 5px;
+  }
+ 
+  .option-button{
+    box-shadow: 1px 1px 1px 1px #abaaaa
+  }
+
+  .question_Btns button{
+    padding: 6px 20px;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+
+  .prev_Btn{
+    background-color: blue;
+    color: white;
+  }
+
+  .next_Btn{
+    background-color: red;
+    color: white;
+  }
+
+  .submit_Btn{
+    background-color: rgb(10, 10, 10);
+    color: white;
+  }
+
+  
